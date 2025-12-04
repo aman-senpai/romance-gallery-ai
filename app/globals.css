@@ -10,6 +10,39 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-kawaii-pink: #ffb7c5;
+  --color-kawaii-hot: #ff69b4;
+  --color-kawaii-blue: #a0d8ef;
+  --color-kawaii-purple: #e0bbe4;
+  --color-kawaii-yellow: #fff4bd;
+  --color-kawaii-cream: #fffdd0;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-delayed: float 6s ease-in-out 3s infinite;
+  --animate-sparkle: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +56,17 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media print {
+  @page {
+    margin: 0.5cm;
+    size: auto;
+  }
+  
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    background-color: white;
+  }
 }
