@@ -71,30 +71,45 @@ export default function Wizard({ categories }: WizardProps) {
             setProgress((completedSteps / totalSteps) * 100);
 
             // 2. Generate Gallery Images
-            const galleryPromises = galleryPrompts.map(async (prompt) => {
-                const formData = new FormData();
-                formData.append('image', imageFile);
-                formData.append('style', category.name);
-                formData.append('prompt', prompt);
+            const batchSize = 2;
+            const newGalleryImages: string[] = [];
 
-                try {
-                    const result = await generateImage(formData);
-                    completedSteps++;
-                    setProgress((completedSteps / totalSteps) * 100);
+            for (let i = 0; i < galleryPrompts.length; i += batchSize) {
+                const batch = galleryPrompts.slice(i, i + batchSize);
 
-                    if (result.success && result.imageUrl) {
-                        return result.imageUrl;
+                const batchPromises = batch.map(async (prompt) => {
+                    const formData = new FormData();
+                    formData.append('image', imageFile);
+                    formData.append('style', category.name);
+                    formData.append('prompt', prompt);
+
+                    try {
+                        const result = await generateImage(formData);
+                        completedSteps++;
+                        setProgress((completedSteps / totalSteps) * 100);
+
+                        if (result.success && result.imageUrl) {
+                            return result.imageUrl;
+                        }
+                    } catch (error) {
+                        console.error("Failed to generate gallery image:", error);
                     }
-                } catch (error) {
-                    console.error("Failed to generate gallery image:", error);
+                    return null;
+                });
+
+                const results = await Promise.all(batchPromises);
+                const validResults = results.filter((url): url is string => url !== null);
+                newGalleryImages.push(...validResults);
+
+                // Update gallery images progressively so user sees something happening
+                setGalleryImages(prev => [...prev, ...validResults]);
+
+                // Add delay between batches if not the last batch
+                if (i + batchSize < galleryPrompts.length) {
+                    await new Promise(resolve => setTimeout(resolve, 2000)); // 2 second delay
                 }
-                return null;
-            });
+            }
 
-            const results = await Promise.all(galleryPromises);
-            const newGalleryImages = results.filter((url): url is string => url !== null);
-
-            setGalleryImages(newGalleryImages);
             setStep('result');
         } catch (error) {
             console.error(error);
