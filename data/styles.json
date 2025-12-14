@@ -1,0 +1,489 @@
+[
+  {
+    "id": "cute-anime",
+    "name": "Cute Anime",
+    "type": "couple",
+    "profilePrompt": "Create a cute anime-style profile portrait of the couple with ultra-clean line art and pastel colors. Preserve exact facial geometry and feature spacing while translating into anime form. Sparkling eyes aligned to real eye placement, soft gradient shading, shallow depth of field, high-quality anime rendering.",
+    "galleryPrompts": [
+      "Create an image preserving exact facial geometry: an ultra-kawaii chibi anime couple sharing an oversized fluffy strawberry cake inside a cozy Japanese café. Pastel palette, glossy highlights, smooth gradient shading, whimsical decor, shallow depth of field, ultra-clean line art with perfect facial likeness.",
+      "Create an image preserving exact facial geometry: a dreamy kawaii scene of the couple sitting shoulder-to-shoulder on a grassy hill under a pastel purple-pink starry sky. Soft rim lighting, emotional expressions, oversized hoodies, gentle blur and precise facial translation into anime style.",
+      "Create an image preserving exact facial geometry: a dynamic full-body anime shot of the couple walking hand-in-hand through a lively Japanese street market. High saturation, clean outlines, motion energy, detailed lanterns and crowd, anime stylization without facial drift.",
+      "Create an image preserving exact facial geometry: a minimalist anime morning scene in a sunlit bedroom. Soft muted colors, tender expressions, simple background, natural light direction, accurate facial proportions translated into anime.",
+      "Create an image preserving exact facial geometry: a magical-girl and magical-boy anime portrait with sparkles, whimsical accessories and glowing effects. Shojo anime style, pastel highlights, detailed costumes and perfect facial alignment.",
+      "Create an image preserving exact facial geometry: a nostalgic 90s anime-style scene of the couple laughing while riding a tandem bicycle through a cherry blossom park. Motion blur, bright colors, classic anime mood with precise facial likeness.",
+      "Create an image preserving exact facial geometry: a super-deformed chibi picnic scene where one feeds the other a heart-shaped mochi. Extreme kawaii proportions, rounded silhouettes, pastel palette, recognizable facial features.",
+      "Create an image preserving exact facial geometry: an atmospheric anime rain scene with the couple sharing one umbrella. Wet street reflections, blue-yellow palette, cinematic framing and accurate facial detail.",
+      "Create an image preserving exact facial geometry: a fantasy RPG-style anime scene with the girl as a healer and the boy as a knight resting by a glowing stream. Magical lighting, playful poses and faithful facial translation."
+    ],
+    "details": {
+      "tags": [
+        "Cute Anime",
+        "Couple"
+      ],
+      "vibe": "Romantic",
+      "theme": {
+        "color": "#f472b6",
+        "gradient": "from-pink-300 via-purple-300 to-indigo-400",
+        "emojis": [
+          "🌸",
+          "✨",
+          "🍰",
+          "🎀",
+          "💖"
+        ]
+      }
+    },
+    "subtitle": "Enter the kawaii world of anime.",
+    "title": "Kawaii Dreams"
+  },
+  {
+    "id": "bollywood",
+    "name": "Bollywood",
+    "type": "couple",
+    "profilePrompt": "Create a cinematic Bollywood-style profile portrait. Preserve 100% facial accuracy, natural skin texture and proportions. Dramatic filmi lighting, vibrant colors, traditional attire, shallow depth of field, poster-grade realism.",
+    "galleryPrompts": [
+      "Create an image preserving exact facial identity: a grand Bollywood cinematic still of the couple on a misty mountain peak at sunrise. Flowing sari and tailored suit, dramatic rim light, ultra-saturated colors, expressive eyes, film-poster composition.",
+      "Create an image preserving exact facial identity: the couple dancing in an ornate palace hall. Warm golden lighting, flowing fabrics, cinematic motion blur, classic 90s Bollywood aesthetic with ultra-detailed faces.",
+      "Create an image preserving exact facial identity: the couple running through a sunflower field in slow motion. Wind-blown hair, hyper-saturated colors, cinematic depth and sharp facial focus.",
+      "Create an ultra-realistic power-couple portrait preserving exact facial identity. Man seated confidently on a luxury sofa, woman standing beside him with authority. Editorial lighting, premium interior, natural skin pores, cinematic shadows.",
+      "Create an image preserving exact facial identity: the couple by a Mughal garden fountain. Symmetry, ornate architecture, lens flare, embroidered outfits and refined facial detail.",
+      "Create an image preserving exact facial identity: a high-fashion Bollywood glamour portrait at sunset. Glossy lighting, dramatic sky, rich colors, Karan Johar–style cinematic polish.",
+      "Create an image preserving exact facial identity: the couple laughing on a vintage motorcycle through green countryside. Warm film grain, nostalgic color grading and expressive faces.",
+      "Create an image preserving exact facial identity: an intimate canopy-lit scene with twinkling lights. Soft rim lighting, dreamy tones and perfect facial alignment.",
+      "Create an image preserving exact facial identity: the couple reflected in a calm lake at dusk framed by Indian architecture. Rich saturation and facial fidelity in reflections."
+    ],
+    "details": {
+      "tags": [
+        "Bollywood",
+        "Couple"
+      ],
+      "vibe": "Romantic",
+      "theme": {
+        "color": "#f97316",
+        "gradient": "from-orange-400 via-red-500 to-yellow-500",
+        "emojis": [
+          "💃",
+          "🎬",
+          "✨",
+          "🎥",
+          "🌹"
+        ]
+      }
+    },
+    "subtitle": "Star in your own cinematic blockade.",
+    "title": "Blockbuster Star"
+  },
+  {
+    "id": "anime",
+    "name": "Anime",
+    "type": "couple",
+    "profilePrompt": "Create a high-energy shonen anime profile portrait with dynamic angle and vibrant colors. Preserve exact facial structure and feature placement while stylizing.",
+    "galleryPrompts": [
+      "Create an image preserving exact facial geometry: dynamic shonen anime mid-run scene with speed lines, bold outlines and intense expressions.",
+      "Create an image preserving exact facial geometry: soft shojo manga moment with screentones, cherry blossoms and delicate expressions.",
+      "Create an image preserving exact facial geometry: mecha pilots before a giant robot, neon lighting and gritty anime realism.",
+      "Create an image preserving exact facial geometry: Studio Ghibli–inspired rooftop sunset with watercolor textures and warm light.",
+      "Create an image preserving exact facial geometry: early-2000s anime opening shot with strong backlight and dynamic framing.",
+      "Create an image preserving exact facial geometry: Isekai fantasy characters with detailed armor and glowing magic effects.",
+      "Create an image preserving exact facial geometry: chibi close-up portrait with simplified forms but recognizable features.",
+      "Create an image preserving exact facial geometry: monochrome manga panel with ink shading and expressive faces.",
+      "Create an image preserving exact facial geometry: futuristic Neo-Tokyo street scene with neon rain and cyberpunk atmosphere."
+    ],
+    "details": {
+      "tags": [
+        "Anime",
+        "Couple"
+      ],
+      "vibe": "Action",
+      "theme": {
+        "color": "#3b82f6",
+        "gradient": "from-blue-400 via-indigo-500 to-cyan-400",
+        "emojis": [
+          "⚡",
+          "⚔️",
+          "🎌",
+          "🍜",
+          "🏯"
+        ]
+      }
+    },
+    "subtitle": "Experience the Anime aesthetic.",
+    "title": "Anime Mode"
+  },
+  {
+    "id": "vintage-film",
+    "name": "Vintage Film",
+    "type": "couple",
+    "profilePrompt": "Create a vintage film-noir profile portrait in black and white. Dramatic shadows, film grain, classic composition with preserved facial realism.",
+    "galleryPrompts": [
+      "Create an image preserving exact facial identity: rain-soaked noir alley scene with high-contrast lighting and reflections.",
+      "Create an image preserving exact facial identity: Venetian-blind sidelight close-up with intense contrast and film grain.",
+      "Create an image preserving exact facial identity: smoky jazz club embrace under a single spotlight.",
+      "Create an image preserving exact facial identity: foggy street lamp silhouette scene with facial detail retained.",
+      "Create an image preserving exact facial identity: bar scene where only eyes catch light, heavy shadows and grain.",
+      "Create an image preserving exact facial identity: dramatic office argument scene with angular shadows.",
+      "Create an image preserving exact facial identity: harsh headlight illumination on a dark street.",
+      "Create an image preserving exact facial identity: shattered mirror reflection with multiple aligned facial fragments.",
+      "Create an image preserving exact facial identity: crowded newsroom under overhead light with classic film-stock grain."
+    ],
+    "details": {
+      "tags": [
+        "Vintage Film",
+        "Couple"
+      ],
+      "vibe": "Classic",
+      "theme": {
+        "color": "#4b5563",
+        "gradient": "from-gray-700 via-gray-500 to-gray-800",
+        "emojis": [
+          "🎞️",
+          "🕵️",
+          "🎩",
+          "🍸",
+          "🎹"
+        ]
+      }
+    },
+    "subtitle": "Experience the Vintage Film aesthetic.",
+    "title": "Vintage Film Mode"
+  },
+  {
+    "id": "fine-art",
+    "name": "Fine Art",
+    "type": "couple",
+    "profilePrompt": "Create a museum-quality fine art portrait with painterly textures and classical composition while preserving facial identity.",
+    "galleryPrompts": [
+      "Create an image preserving exact facial identity: Kehinde Wiley–inspired portrait with ornate patterned background.",
+      "Create an image preserving exact facial identity: Francis Bacon–inspired interior with controlled abstraction.",
+      "Create an image preserving exact facial identity: Van Gogh–inspired impasto oil painting with vivid colors.",
+      "Create an image preserving exact facial identity: hyper-realistic digital gallery portrait with microscopic skin detail.",
+      "Create an image preserving exact facial identity: cubist reinterpretation with recognizable facial structure.",
+      "Create an image preserving exact facial identity: soft pastel drawing with impressionistic lighting.",
+      "Create an image preserving exact facial identity: Pop Art style with bold outlines and dot textures.",
+      "Create an image preserving exact facial identity: woodcut-style high-contrast print.",
+      "Create an image preserving exact facial identity: surreal Magritte-inspired scene with symbolic elements."
+    ],
+    "details": {
+      "tags": [
+        "Fine Art",
+        "Couple"
+      ],
+      "vibe": "Artistic",
+      "theme": {
+        "color": "#ca8a04",
+        "gradient": "from-yellow-600 via-amber-500 to-orange-400",
+        "emojis": [
+          "🖼️",
+          "🎨",
+          "🏛️",
+          "🖌️",
+          "🎭"
+        ]
+      }
+    },
+    "subtitle": "Experience the Fine Art aesthetic.",
+    "title": "Fine Art Mode"
+  },
+  {
+    "id": "cyberpunk",
+    "name": "Cyberpunk",
+    "type": "couple",
+    "profilePrompt": "Create a cyberpunk profile portrait with neon lighting, rain reflections and futuristic styling. Preserve exact facial anatomy and skin realism.",
+    "galleryPrompts": [
+      "Create an image preserving exact facial identity: neon-drenched rainy street with cyan and magenta reflections.",
+      "Create an image preserving exact facial identity: intimate cyberpunk portrait with glowing implants.",
+      "Create an image preserving exact facial identity: crowded futuristic market with AR overlays and motion.",
+      "Create an image preserving exact facial identity: dim apartment lit by flickering holograms.",
+      "Create an image preserving exact facial identity: skyscraper edge overlooking a glowing city.",
+      "Create an image preserving exact facial identity: digital snowstorm with strong backlighting.",
+      "Create an image preserving exact facial identity: polluted water reflections with neon ads.",
+      "Create an image preserving exact facial identity: underground lair with red emergency lighting.",
+      "Create an image preserving exact facial identity: dramatic profile lit by sparks and electricity."
+    ],
+    "details": {
+      "tags": [
+        "Cyberpunk",
+        "Couple"
+      ],
+      "vibe": "Futuristic",
+      "theme": {
+        "color": "#06b6d4",
+        "gradient": "from-cyan-500 via-purple-600 to-pink-500",
+        "emojis": [
+          "🤖",
+          "🌃",
+          "🦾",
+          "👾",
+          "📡"
+        ]
+      }
+    },
+    "subtitle": "Step into the neon future.",
+    "title": "Neon Future"
+  },
+  {
+    "id": "princess",
+    "name": "Princess",
+    "type": "single",
+    "gender": "female",
+    "profilePrompt": "Create a photorealistic royal princess portrait with elegant gown, tiara and cinematic lighting. Preserve exact facial identity, natural skin texture and proportions.",
+    "galleryPrompts": [
+      "Using the uploaded image as reference, transform the subject into a realistic live-action Cinderella at a royal ball. Preserve identical facial features, natural skin pores, pale blue silk gown, cinematic moonlight, palace realism, 8K.",
+      "Using the uploaded image as reference, recreate the subject as a realistic live-action Belle. Preserve facial identity, golden satin gown, warm candlelit castle interior, cinematic depth.",
+      "Using the uploaded image as reference, transform the subject into a realistic live-action Ariel. Exact facial likeness, underwater lighting, realistic hair physics and mermaid tail.",
+      "Using the uploaded image as reference, recreate the subject as a realistic live-action Snow White. Natural forest lighting, medieval gown, fairytale realism.",
+      "Using the uploaded image as reference, transform the subject into a realistic live-action Rapunzel. Ultra-long hair physics, lantern-lit night scene, cinematic fantasy realism.",
+      "Using the uploaded image as reference, recreate the subject as a realistic live-action Jasmine. Turquoise silk attire, palace balcony at sunset, cinematic realism.",
+      "Using the uploaded image as reference, transform the subject into a realistic live-action Aurora (Sleeping Beauty). Pink gown, forest clearing, ethereal morning light, 8K.",
+      "Using the uploaded image as reference, recreate the subject as a realistic live-action Tiana. Green lily-pad inspired gown, magical bayou night, fireflies, 8K.",
+      "Using the uploaded image as reference, transform the subject into a realistic live-action Mulan. Traditional armor, cherry blossoms, Great Wall background, cinematic lighting."
+    ],
+    "details": {
+      "tags": [
+        "Princess",
+        "Single"
+      ],
+      "vibe": "Royal",
+      "theme": {
+        "color": "#ec4899",
+        "gradient": "from-pink-400 via-rose-300 to-fuchsia-400",
+        "emojis": [
+          "👑",
+          "🏰",
+          "🦄",
+          "👗",
+          "✨"
+        ]
+      }
+    },
+    "subtitle": "Wear your crown with elegance.",
+    "title": "Fairytale Princess"
+  },
+  {
+    "id": "prince",
+    "name": "Prince",
+    "type": "single",
+    "gender": "male",
+    "profilePrompt": "Create a photorealistic royal prince portrait with regal attire and cinematic lighting. Preserve exact facial identity and natural skin detail.",
+    "galleryPrompts": [
+      "Using the uploaded image as reference, transform the subject into a realistic live-action Prince Charming. Military dress uniform, palace ballroom, cinematic moonlight.",
+      "Using the uploaded image as reference, recreate the subject as a realistic live-action Prince Eric on a ship deck with ocean lighting.",
+      "Using the uploaded image as reference, transform the subject into a realistic live-action Aladdin. Desert sunset, palace balcony, cinematic realism.",
+      "Using the uploaded image as reference, recreate the subject as a realistic live-action Flynn Rider–style rogue hero. Lantern-lit night scene.",
+      "Using the uploaded image as reference, recreate the subject as a realistic live-action warrior prince. Detailed armor, dramatic lighting, epic realism.",
+      "Using the uploaded image as reference, transform the subject into a realistic live-action Beast (Human form). Blue frock coat, gold embroidery, castle interior.",
+      "Using the uploaded image as reference, recreate the subject as a realistic live-action Prince Phillip. Riding gear, enchanted forest, heroic pose.",
+      "Using the uploaded image as reference, transform the subject into a realistic live-action Prince Naveen. Jazz era suit, bayou street lamp, festive atmosphere.",
+      "Using the uploaded image as reference, recreate the subject as a realistic live-action Hercules-style hero. Greek armor, temple background, golden hour lighting."
+    ],
+    "details": {
+      "tags": [
+        "Prince",
+        "Single"
+      ],
+      "vibe": "Royal",
+      "theme": {
+        "color": "#2563eb",
+        "gradient": "from-blue-600 via-indigo-500 to-sky-400",
+        "emojis": [
+          "⚔️",
+          "👑",
+          "🐎",
+          "🏰",
+          "🛡️"
+        ]
+      }
+    },
+    "subtitle": "Claim your throne and rule.",
+    "title": "Royal Highness"
+  },
+  {
+    "id": "cinematic-portrait",
+    "name": "Cinematic Portrait",
+    "type": "single",
+    "gender": "female",
+    "profilePrompt": "Create a cinematic live-action portrait with shallow depth of field, film lighting and ultra-realistic skin texture.",
+    "galleryPrompts": [
+      "Using the uploaded image as reference, create a cinematic close-up portrait with natural skin pores, emotional expression, 85mm lens look, soft bokeh.",
+      "Create a moody low-light cinematic portrait with subtle film grain, intense eye focus, and dramatic shadows.",
+      "Create a high-key fashion profile portrait. Bright studio lighting, clean white background, sharp focus, magazine quality.",
+      "Create a golden hour outdoor portrait. Sun flare, warm tones, natural backlight, wind in hair.",
+      "Create a neon-lit urban night portrait. City lights bokeh, colorful reflections on skin, modern aesthetic.",
+      "Create a black and white fine art portrait. High contrast, rembrandt lighting, timeless look, focus on texture.",
+      "Create a soft ethereal portrait. Dreamy haze, pastel colors, flower garden background, romantic vibe.",
+      "Create a dramatic rain portrait. Wet hair, water droplets on skin, moody blue tones, cinematic realism.",
+      "Create a vintage polaroid style portrait. Soft colors, slight fade, nostalgic feeling, candid expression."
+    ],
+    "details": {
+      "tags": [
+        "Cinematic",
+        "Single"
+      ],
+      "vibe": "Emotional",
+      "theme": {
+        "color": "#f43f5e",
+        "gradient": "from-rose-400 via-red-400 to-orange-300",
+        "emojis": [
+          "📸",
+          "🎞️",
+          "✨",
+          "👀",
+          "💋"
+        ]
+      }
+    },
+    "subtitle": "Shine in the spotlight.",
+    "title": "Movie Star"
+  },
+  {
+    "id": "mythic-fantasy",
+    "name": "Mythic Fantasy",
+    "type": "single",
+    "gender": "male",
+    "profilePrompt": "Create a mythic fantasy portrait with epic lighting and legendary aesthetics while preserving facial realism.",
+    "galleryPrompts": [
+      "Using the uploaded image as reference, transform the subject into a mythic hero or goddess with glowing runes and cinematic lighting.",
+      "Create a divine celestial portrait with volumetric light, clouds, and magical atmosphere.",
+      "Transform the subject into an Elven ranger. Forest background, detailed leather armor, bow, nature magic lighting.",
+      "Create a dark fantasy warlock portrait. Shadowy hood, glowing purple magic mist, ancient ruins background.",
+      "Transform the subject into a Viking warrior. Fur cloak, snowstorm, intense gaze, rune markings.",
+      "Create a futuristic sci-fi fantasy portrait. Glowing tech armor, energy shield, alien landscape background.",
+      "Transform the subject into a water elemental style portrait. Fluid forms, bubbles, underwater lighting, bioluminescence.",
+      "Create a fire mage portrait. Flames, warm lighting, embers floating, intense power.",
+      "Transform the subject into a Paladin in shining plate armor. Holy light, cathedral stained glass background, heroic stance."
+    ],
+    "details": {
+      "tags": [
+        "Fantasy",
+        "Single"
+      ],
+      "vibe": "Epic",
+      "theme": {
+        "color": "#f59e0b",
+        "gradient": "from-amber-400 via-orange-500 to-red-600",
+        "emojis": [
+          "⚡",
+          "🧚",
+          "🐉",
+          "🔮",
+          "🗡️"
+        ]
+      }
+    },
+    "subtitle": "Experience the Mythic Fantasy aesthetic.",
+    "title": "Mythic Fantasy Mode"
+  },
+  {
+    "id": "magical-world",
+    "name": "Magical World",
+    "type": "couple",
+    "profilePrompt": "Create a cinematic Harry Potter world style profile portrait of the couple, wearing Hogwarts robes, magical lighting, castle background, realistic, 8k.",
+    "galleryPrompts": [
+      "Create an image preserving exact facial identity: the couple wearing Hogwarts house robes sharing a butterbeer in Hogsmeade. Snowy village background, warm lantern light, magical atmosphere.",
+      "Create an image preserving exact facial identity: the couple flying on broomsticks over the Quidditch pitch. Dynamic action shot, wind-blown hair, golden snitch in background.",
+      "Create an image preserving exact facial identity: the couple studying ancient runes in the Hogwarts library. Floating candles, stacks of magical books, dust motes in light beams.",
+      "Create an image preserving exact facial identity: the couple casting a joint Patronus charm in the Forbidden Forest. Glowing blue stag and doe spiritual energy, dark moody forest background.",
+      "Create an image preserving exact facial identity: a Yule Ball formal portrait. The couple in dress robes dancing in the Great Hall, ice sculptures, winter magic, cinematic lighting.",
+      "Create an image preserving exact facial identity: the couple brewing a potion together in the dungeons. Bubbling cauldrons, green steam, stone walls, mysterious lighting.",
+      "Create an image preserving exact facial identity: the couple standing on the moving staircases looking at living portraits. Grand castle architecture, magical whimsy, soft torchlight.",
+      "Create an image preserving exact facial identity: the couple waiting on Platform 9 3/4 next to the Hogwarts Express. Steam, vintage luggage, red train, bustling station atmosphere.",
+      "Create an image preserving exact facial identity: the couple having a picnic by the Black Lake with the giant squid tentacle waving in distance. Hogwarts castle on the cliff, sunny day, peaceful vibe."
+    ],
+    "details": {
+      "tags": [
+        "Harry Potter",
+        "Couple"
+      ],
+      "vibe": "Magical",
+      "theme": {
+        "color": "#b91c1c",
+        "gradient": "from-red-800 via-yellow-600 to-red-900",
+        "emojis": [
+          "🪄",
+          "🏰",
+          "🦉",
+          "⚡",
+          "🍺"
+        ]
+      }
+    },
+    "subtitle": "Cast spells and make magic together.",
+    "title": "Magical Duo"
+  },
+  {
+    "id": "hogwarts-witch",
+    "name": "Hogwarts Witch",
+    "type": "single",
+    "gender": "female",
+    "profilePrompt": "Create a realistic portrait of a female Hogwarts student witch, holding a wand, wearing house robes, magical castle background, photorealistic, 8k.",
+    "galleryPrompts": [
+      "Using the uploaded image as reference, transform the subject into a realistic Hogwarts student. Preserve facial identity. Wearing Gryffindor or house robes, casting a spell with a wand, sparks flying. Great Hall background, cinematic lighting.",
+      "Using the uploaded image as reference, recreate the subject as a witch in the Hogwarts library. Floating books, studying magic, candlelit atmosphere, realistic skin texture.",
+      "Using the uploaded image as reference, transform the subject into a Quidditch Seeker. Wearing protective leather gear, holding a broomstick, wind in hair, stadium background.",
+      "Using the uploaded image as reference, recreate the subject attending the Yule Ball. Wearing an elegant magical dress robe, winter wonderland decoration, soft glow.",
+      "Using the uploaded image as reference, transform the subject into a Herbology student. Holding a screeching Mandrake (with earmuffs), greenhouse setting, magical plants, natural sunlight.",
+      "Using the uploaded image as reference, transform the subject into a student in Diagon Alley. Selecting a wand at Ollivanders, dusty boxes, magical glow.",
+      "Using the uploaded image as reference, recreate the subject casting a Patronus. Glowing silver animal, dark forest background, intense focus.",
+      "Using the uploaded image as reference, transform the subject into a Potions master. Bubbling cauldron, shelf of jars, mysterious dungeon lighting.",
+      "Using the uploaded image as reference, recreate the subject riding a Hippogriff over the Black Lake. Freedom, wind, scenic castle view."
+    ],
+    "details": {
+      "tags": [
+        "Harry Potter",
+        "Single"
+      ],
+      "vibe": "Magical",
+      "theme": {
+        "color": "#dc2626",
+        "gradient": "from-red-700 via-amber-500 to-red-800",
+        "emojis": [
+          "🧙‍♀️",
+          "✨",
+          "📜",
+          "🦉",
+          "🔮"
+        ]
+      }
+    },
+    "subtitle": "Unleash your inner magic.",
+    "title": "School of Witchcraft"
+  },
+  {
+    "id": "hogwarts-wizard",
+    "name": "Hogwarts Wizard",
+    "type": "single",
+    "gender": "male",
+    "profilePrompt": "Create a realistic portrait of a male Hogwarts student wizard, holding a wand, wearing house robes, magical castle background, photorealistic, 8k.",
+    "galleryPrompts": [
+      "Using the uploaded image as reference, transform the subject into a realistic Hogwarts student. Preserve facial identity. Wearing Slytherin or house robes, practicing a duel spell. Courtyard background, cinematic magical effects.",
+      "Using the uploaded image as reference, recreate the subject as a wizard in Potions class. Mixing a glowing liquid in a cauldron, confident expression, dungeon stone walls background.",
+      "Using the uploaded image as reference, transform the subject into a Quidditch Beater. Holding a bat, wearing team robes, flying on a broom, dynamic sky background.",
+      "Using the uploaded image as reference, recreate the subject attending the Yule Ball. Wearing formal dress robes, snowy Great Hall background, elegant lighting.",
+      "Using the uploaded image as reference, transform the subject into a Care of Magical Creatures student. Interacting with a Hippogriff, forest edge setting, autumnal light.",
+      "Using the uploaded image as reference, transform the subject into a student at Hogsmeade. Drinking Butterbeer, snowy village background, cozy scarf.",
+      "Using the uploaded image as reference, recreate the subject casting a powerful spell. Wand drawn, energy bolt, intense expression, dark arts classroom.",
+      "Using the uploaded image as reference, transform the subject into a student on the Hogwarts Express. Looking out window, chocolate frog, scenic countryside.",
+      "Using the uploaded image as reference, recreate the subject exploring the Forbidden Forest. Lantern in hand, spooky atmosphere, mist."
+    ],
+    "details": {
+      "tags": [
+        "Harry Potter",
+        "Single"
+      ],
+      "vibe": "Magical",
+      "theme": {
+        "color": "#15803d",
+        "gradient": "from-green-800 via-slate-600 to-green-900",
+        "emojis": [
+          "🐍",
+          "🧪",
+          "🌑",
+          "🏰",
+          "⚡"
+        ]
+      }
+    },
+    "subtitle": "Your acceptance letter has arrived.",
+    "title": "Wizarding World"
+  }
+]

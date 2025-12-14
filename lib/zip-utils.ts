@@ -3,13 +3,19 @@ import { saveAs } from "file-saver";
 
 export async function downloadZip(
   profileImage: string,
-  galleryImages: string[],
+  galleryHistory: string[][],
+  currentIndices: number[],
   sourceImageFile: File,
   styleName: string,
   coupleName: string
 ) {
+  // Create folder with user's name
+  const safeName =
+    coupleName.replace(/[^a-z0-9]/gi, "-").toLowerCase() || "couplai";
+  const folderName = `${safeName}-profile`;
+
   const zip = new JSZip();
-  const folder = zip.folder("couplai-profile");
+  const folder = zip.folder(folderName);
   if (!folder) throw new Error("Failed to create zip folder");
 
   // 1. Add Source Image
@@ -26,46 +32,68 @@ export async function downloadZip(
   }
   folder.file(profileFileName, profileBlob);
 
-  // 3. Add Gallery Images
-  const galleryPaths: string[] = [];
-  for (let i = 0; i < galleryImages.length; i++) {
-    const url = galleryImages[i];
-    const fileName = `gallery-${i + 1}.png`;
+  // 3. Add Gallery Images (All History)
+  const activeGalleryPaths: string[] = [];
 
-    let blob: Blob;
-    if (url.startsWith("data:")) {
-      blob = await (await fetch(url)).blob();
-    } else {
-      blob = await (await fetch(url)).blob();
+  for (let i = 0; i < galleryHistory.length; i++) {
+    const history = galleryHistory[i];
+    const currentIndex = currentIndices[i];
+
+    // Process all versions
+    for (let version = 0; version < history.length; version++) {
+      const url = history[version];
+      // Naming convention: gallery-{slot}-v{version}.png
+      const fileName = `gallery-${i + 1}-v${version + 1}.png`;
+
+      // If this is the active version, add it to the list for HTML
+      if (version === currentIndex) {
+        activeGalleryPaths.push(fileName);
+      }
+
+      let blob: Blob;
+      if (url.startsWith("data:")) {
+        blob = await (await fetch(url)).blob();
+      } else {
+        blob = await (await fetch(url)).blob();
+      }
+
+      folder.file(fileName, blob);
     }
-
-    folder.file(fileName, blob);
-    galleryPaths.push(fileName);
   }
 
-  // 4. Generate HTML
-  const htmlContent = generateProfileHtml(
+  // 4. Generate HTML (Light)
+  const htmlContentLight = generateProfileHtml(
     profileFileName,
-    galleryPaths,
+    activeGalleryPaths,
     styleName,
-    coupleName
+    coupleName,
+    "light"
   );
-  folder.file("index.html", htmlContent);
+  folder.file("profile-light.html", htmlContentLight);
+
+  // 5. Generate HTML (Dark)
+  const htmlContentDark = generateProfileHtml(
+    profileFileName,
+    activeGalleryPaths,
+    styleName,
+    coupleName,
+    "dark"
+  );
+  folder.file("profile-dark.html", htmlContentDark);
 
   // Generate and Save
   const content = await zip.generateAsync({ type: "blob" });
+  const zipFileName = `${safeName}-profile.zip`;
 
-  const safeName = coupleName.replace(/[^a-z0-9]/gi, "-").toLowerCase();
-  const fileName = `${safeName}-profile.zip`;
-
-  saveAs(content, fileName);
+  saveAs(content, zipFileName);
 }
 
 function generateProfileHtml(
   profilePath: string,
   galleryPaths: string[],
   styleName: string,
-  coupleName: string
+  coupleName: string,
+  theme: "light" | "dark" = "light"
 ) {
   return `
 <!DOCTYPE html>
@@ -73,28 +101,40 @@ function generateProfileHtml(
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${coupleName} - ${styleName}</title>
+    <title>${coupleName} - ${styleName} (${
+    theme === "light" ? "Light" : "Dark"
+  })</title>
     <style>
-        :root { --primary: #FF69B4; --bg: #f8f9fa; }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); margin: 0; padding: 0; color: #333; }
-        .container { max-width: 1000px; margin: 40px auto; background: #fff; border-radius: 30px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.1); }
+        :root {
+            --primary: #FF69B4;
+            --bg: ${theme === "light" ? "#f8f9fa" : "#1a1a1a"};
+            --card-bg: ${theme === "light" ? "#ffffff" : "#262626"};
+            --text-main: ${theme === "light" ? "#333333" : "#f3f4f6"};
+            --text-sub: ${theme === "light" ? "#718096" : "#a0aec0"};
+            --card-shadow: ${
+              theme === "light" ? "rgba(0,0,0,0.1)" : "rgba(0,0,0,0.5)"
+            };
+            --border-color: ${theme === "light" ? "#edf2f7" : "#404040"};
+        }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); margin: 0; padding: 0; color: var(--text-main); transition: background 0.3s, color 0.3s; }
+        .container { max-width: 1000px; margin: 40px auto; background: var(--card-bg); border-radius: 30px; overflow: hidden; box-shadow: 0 20px 60px var(--card-shadow); }
         
         .header-bg { height: 200px; background: linear-gradient(135deg, #FFB7C5, #E0BBE4, #A0D8EF); }
         
         .profile-section { text-align: center; margin-top: -100px; padding-bottom: 40px; }
-        .profile-img-container { width: 200px; height: 200px; margin: 0 auto; border-radius: 50%; padding: 5px; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+        .profile-img-container { width: 200px; height: 200px; margin: 0 auto; border-radius: 50%; padding: 5px; background: var(--card-bg); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
         .profile-img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 4px solid var(--primary); }
         
         .info { margin-top: 20px; padding: 0 20px; }
-        h1 { margin: 0; font-size: 2.5em; color: #2d3748; letter-spacing: -1px; }
+        h1 { margin: 0; font-size: 2.5em; color: var(--text-main); letter-spacing: -1px; }
         .subtitle { color: var(--primary); font-weight: bold; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9em; margin-top: 5px; }
-        .bio { color: #718096; margin-top: 10px; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+        .bio { color: var(--text-sub); margin-top: 10px; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.6; }
         
-        .gallery-section { background: #fcfcfc; padding: 60px 40px; border-top: 1px solid #edf2f7; }
+        .gallery-section { background: var(--bg); padding: 60px 40px; border-top: 1px solid var(--border-color); }
         .gallery-title { text-align: center; color: #cbd5e0; font-weight: bold; letter-spacing: 4px; font-size: 0.8em; margin-bottom: 40px; text-transform: uppercase; }
         
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
-        .card { border-radius: 20px; overflow: hidden; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s ease; border: 1px solid #edf2f7; }
+        .card { border-radius: 20px; overflow: hidden; background: var(--card-bg); box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s ease; border: 1px solid var(--border-color); }
         .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
         .card-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; }
         
